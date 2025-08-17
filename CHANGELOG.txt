@@ -1,0 +1,50 @@
+﻿v2.6.8 - 2025-08-17 17:04:31
+UI bug fixes
+
+v2.6.7 - 2025-08-17 16:52:10
+UI Improvements
+
+v2.6.6 - 2025-08-17 16:44:48
+Added some changes to GITHUB Repo deployment
+
+v2.6.5 - 2025-08-17 16:33:43
+Adding stability fixes to Runtime
+
+v2.6.4 - 2025-08-17 16:13:00
+added a better resource loaded statement
+
+v2.6.3 - 2025-08-17 16:08:55
+embedded icon file to show on other computers
+
+v2.6.2 - 2025-08-17 16:06:35
+fixed stability issues
+
+v2.6.1 - 2025-08-17 16:05:24
+fixed the logo
+
+v2.6.0 - 2025-08-17 16:02:05
+added better logo support, and to fix the deployment agent not disabling
+
+v2.5.9 - 2025-08-17 15:57:20
+added the exclusion of the Experion PKS Deployment Agent from preventing the app from running
+
+v2.5.8 - 2025-08-17 15:53:42
+added button for windows services, and change the name of the Honeywell SSServices button
+
+v2.5.6 - 2025-08-17 15:43:33
+Testing the new change log feature for the EXE Builder
+
+v2.5.6 - 2025-08-17 15:45:00
+Added changelog functionality to build script - now prompts for changes and creates CHANGELOG.txt with timestamps
+
+
+
+
+
+
+
+
+
+
+
+
