@@ -25,7 +25,7 @@ KDService is a Windows GUI application designed to safely manage Honeywell Exper
 
 ## Installation
 
-1. Download `KDService.exe` from the [latest release](https://github.com/USERNAME/KDService/releases)
+1. Download `KDService.exe` from the [latest release](https://github.com/dev-KyleDavis/KDS-Tool/releases)
 2. Run the executable - no installation required
 3. The application will automatically request administrator privileges
 
@@ -71,7 +71,7 @@ See [CHANGELOG.txt](CHANGELOG.txt) for detailed version history.
 **Developed by ReRackIT Software**
 
 For issues or questions:
-- Check existing [Issues](https://github.com/USERNAME/KDService/issues)
+- Check existing [Issues](https://github.com/dev-KyleDavis/KDS-Tool/issues)
 - Create a new issue with detailed description
 - Include Windows version and Experion PKS version
 
