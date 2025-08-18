@@ -1,4 +1,28 @@
-﻿v2.8.4 - 2025-08-17 20:29:40
+﻿v2.8.7 - 2025-08-17 20:48:24
+Stability Fixes
+
+v2.8.6 - 2025-08-17 20:40:35
+ Fixed Issue:
+  The Enable/Disable buttons were becoming active mid-way through force operations because the UpdateStatus() method was overriding the button states during
+   long operations.
+
+  Solution:
+  Added if (!isTaskRunning) check in UpdateStatus() method before updating button states. Now:
+
+  - During force start/stop operations, buttons remain disabled throughout the entire operation
+  - The periodic refresh timer won't re-enable buttons until the task completes
+  - Only when EndTask() is called do the buttons get re-enabled through UpdateButtonStates()
+
+  Technical Details:
+  - UpdateStatus() is called by the refresh timer every few seconds
+  - Previously it would set button enabled states without checking if a task was running
+  - Now button state updates are skipped entirely during active operations
+  - This ensures buttons stay grayed out consistently during force operations
+
+v2.8.5 - 2025-08-17 20:35:06
+Changed ICON
+
+v2.8.4 - 2025-08-17 20:29:40
  KDService v2.8.3 - UI Responsiveness & Timeout Fixes
 
   Fixed Issues:
@@ -149,6 +173,9 @@ Testing the new change log feature for the EXE Builder
 
 v2.5.6 - 2025-08-17 15:45:00
 Added changelog functionality to build script - now prompts for changes and creates CHANGELOG.txt with timestamps
+
+
+
 
 
 
