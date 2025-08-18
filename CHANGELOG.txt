@@ -1,4 +1,30 @@
-﻿v2.8.2 - 2025-08-17 20:16:24
+﻿v2.8.3 - 2025-08-17 20:24:37
+KDService v2.8.2 - SSServices-Enhanced Force Start/Stop
+
+  Key Improvements:
+
+  1. Better Windows Compatibility
+    - Replaced garbled dropdown arrows with simple "v" character
+    - Compatible with Windows XP, 2003, 2008 R2, 7 and above
+  2. Enhanced Service Existence Checking
+    - Now checks ALL services (not just Experion services) like SSServices does
+    - Uses GetServiceByName() method that queries Win32_Service for any service
+    - Matches both service Name and DisplayName properties
+    - Properly handles optional services (no error for missing optional services)
+  3. SSServices-Aligned Logic
+    - 3-retry mechanism for each service operation (already implemented)
+    - Process killing fallback when graceful stop fails (already implemented)
+    - Proper service state checking before operations (already implemented)
+    - Registry-based service configuration handling (already implemented)
+    - Timeout handling with status verification (already implemented)
+
+  Database Safety Features:
+  - Only processes services that actually exist on the machine
+  - Respects DefaultState attributes (Manual/Disabled services are skipped during start)
+  - Uses exact same methodology as SSServices for service ordering and dependencies
+  - Implements proper retry logic to prevent corruption from failed operations
+
+v2.8.2 - 2025-08-17 20:16:24
 - Force Stop/Start buttons with dropdown arrows
   - Context menus for individual service group selection
   - ET Services, HSC Services, SQL Services, CC Services, Other Services options
@@ -97,6 +123,7 @@ Testing the new change log feature for the EXE Builder
 
 v2.5.6 - 2025-08-17 15:45:00
 Added changelog functionality to build script - now prompts for changes and creates CHANGELOG.txt with timestamps
+
 
 
 
