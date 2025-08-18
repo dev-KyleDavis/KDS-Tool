@@ -1,4 +1,30 @@
-﻿v2.8.3 - 2025-08-17 20:24:37
+﻿v2.8.4 - 2025-08-17 20:29:40
+ KDService v2.8.3 - UI Responsiveness & Timeout Fixes
+
+  Fixed Issues:
+
+  1. Windows Services Button Not Responding
+    - Made BtnWindowsServices_Click async to prevent UI blocking
+    - Now uses Task.Run() to launch services.msc without blocking the main thread
+    - Button remains responsive even during service operations
+  2. 30-Second Service Start Timeout
+    - Increased service start timeout from 15 seconds to 30 seconds
+    - Added clear timeout messaging when services fail to start within 30 seconds
+    - Enhanced error reporting: "Service X failed to start within 30 seconds on attempt Y"
+    - Final failure message shows: "Failed to start service X after 3 attempts (30 sec timeout each)"
+  3. Force Start/Skip Logic After Timeout
+    - Services that fail normal start within 30 seconds get logged appropriately
+    - On attempt 3, system tries WMI force start as fallback
+    - If all attempts fail, service is marked as failed and operation continues to next service
+    - No system hang-ups - operation continues smoothly
+
+  Technical Improvements:
+  - Better async handling prevents UI freezing during service operations
+  - Clear timeout messaging helps identify problematic services
+  - SSServices-style retry logic with enhanced timeout handling
+  - Maintains UI responsiveness with Application.DoEvents() calls during wait periods
+
+v2.8.3 - 2025-08-17 20:24:37
 KDService v2.8.2 - SSServices-Enhanced Force Start/Stop
 
   Key Improvements:
@@ -123,6 +149,7 @@ Testing the new change log feature for the EXE Builder
 
 v2.5.6 - 2025-08-17 15:45:00
 Added changelog functionality to build script - now prompts for changes and creates CHANGELOG.txt with timestamps
+
 
 
 
