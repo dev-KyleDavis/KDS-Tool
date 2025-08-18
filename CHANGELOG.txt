@@ -1,4 +1,7 @@
-﻿v2.8.7 - 2025-08-17 20:48:24
+﻿v2.8.8 - 2025-08-17 21:53:44
+Fixed bug where icon didnt update properly.
+
+v2.8.7 - 2025-08-17 20:48:24
 Stability Fixes
 
 v2.8.6 - 2025-08-17 20:40:35
@@ -173,6 +176,7 @@ Testing the new change log feature for the EXE Builder
 
 v2.5.6 - 2025-08-17 15:45:00
 Added changelog functionality to build script - now prompts for changes and creates CHANGELOG.txt with timestamps
+
 
 
 
