@@ -1,4 +1,62 @@
-﻿v2.6.9 - 2025-08-17 18:15:43
+﻿v2.8.2 - 2025-08-17 20:16:24
+- Force Stop/Start buttons with dropdown arrows
+  - Context menus for individual service group selection
+  - ET Services, HSC Services, SQL Services, CC Services, Other Services options
+  - Professional button layout with proper sizing\
+
+v2.8.1 - 2025-08-17 19:57:20
+- Removed custom colors from Force Stop/Start buttons
+  - Now use same default styling as Force Disable/Enable buttons
+  - Consistent appearance across all Expert Mode buttons
+
+v2.8.0 - 2025-08-17 19:38:47
+Fixed a bug where Force Start/Stop buttons did not work properly.
+
+v2.7.8 - 2025-08-17 19:19:58
+Added Force Start and Stop buttons for Expert Mode.
+
+v2.7.7 - 2025-08-17 19:13:19
+Fixed core components for better program distro's
+
+v2.7.6 - 2025-08-17 19:06:47
+Stability fixes
+
+v2.7.5 - 2025-08-17 19:04:30
+Fixed Expert Mode visibility and functionality:
+  - Expert Mode button now always appears on top (BringToFront)
+  - Fixed button text updates: shows "Force Disable" and "Force Enable" in Expert Mode
+  - Enable button always enabled in Expert Mode for force starting services
+  - Fixed remaining garbled characters in Force Start warning dialog
+  - Expert Mode warning text properly displays when active
+
+v2.7.4 - 2025-08-17 18:56:28
+Fixed Expert Mode visibility and functionality:
+
+v2.7.3 - 2025-08-17 18:52:27
+Fixed remaining encoding issues in
+
+v2.7.2 - 2025-08-17 18:38:43
+ Fixed encoding issues and improved Expert Mode UI:
+
+v2.7.1 - 2025-08-17
+Updated Expert Mode with additional capabilities:
+- Added force start/enable services in Expert Mode
+- Removed excessive emoji usage from UI and messages
+- Changed Expert Mode button from lightning to "E" text
+- Expert Mode now shows "E!" when active
+- Force Enable button appears in Expert Mode
+- Can force start all disabled services with single action
+
+v2.7.0 - 2025-08-17
+Added Expert Mode with force stop and force disable capabilities:
+- Expert Mode button in top-right corner for experienced administrators
+- Force stop running services with dependency handling
+- Force disable services even while running
+- Multiple safety warnings and confirmations
+- Proper dependency resolution when force stopping services
+- Fixed icon loading messages in startup log
+
+v2.6.9 - 2025-08-17 18:15:43
 Fixed a issue where the program would not always open the Windows program. Added better GitHub repo distro pushes.
 
 v2.6.8 - 2025-08-17 17:04:31
@@ -39,14 +97,6 @@ Testing the new change log feature for the EXE Builder
 
 v2.5.6 - 2025-08-17 15:45:00
 Added changelog functionality to build script - now prompts for changes and creates CHANGELOG.txt with timestamps
-
-
-
-
-
-
-
-
 
 
 
